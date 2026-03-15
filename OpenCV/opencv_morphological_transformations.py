@@ -11,14 +11,15 @@ filename = "beard1.jpeg"
 # パス結合
 image_path = os.path.join(IMAGE_DIR, filename)
 
-# 画像読込み (OpenCVではグレースケールに対する処理)
+# 画像読込み (OpenCVでは二値画像に対する処理が基本)
 img = cv.imread(image_path, cv.IMREAD_GRAYSCALE)
 
 if img is None: 
     print("エラー：画像が読み込めませんでした")
     exit()
 
-kernel = np.ones((5,5), np.uint8)
+# Kernel（構造要素）：処理の形状、サイズ、方向性を決めるマトリクス 
+kernel = np.ones((5,5), np.uint8) # 5x5の四角形のすべてが「1(有効)」のKernel
 
 # 1. Erosion
 erosion = cv.erode(img, kernel, iterations=1)
