@@ -1,0 +1,7 @@
+# Pythonキャッシュ
+__pycache__/
+*.py[cod]
+
+# 履歴ファイル
+history/
+*.history
