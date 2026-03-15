@@ -5,3 +5,6 @@ __pycache__/
 # 履歴ファイル
 history/
 *.history
+
+# モデルのCheckpoint
+chcekpoint
