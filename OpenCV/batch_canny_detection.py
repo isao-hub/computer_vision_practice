@@ -5,7 +5,7 @@ import numpy as np
 
 # ディレクトリ設定
 INPUT_DIR = Path("/Users/isaoishikawa/input_images")
-OUTPUT_DIR = INPUT_DIR / "processed"
+OUTPUT_DIR = INPUT_DIR / "edge-detection_results"
 IMAGE_EXTS = {".jpg", "jpeg",".png", "bmp",".tiff", "tif",}
 
 # 出力先のフォルダがない場合に作成

@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt # type: ignore
 IMAGE_DIR = "/Users/isaoishikawa/input_images"
 
 # 読込みたいファイルを指定
-filename = "beard1.jpeg"
+filename = "beard1_mean.jpg"
 # パス結合
 image_path = os.path.join(IMAGE_DIR, filename)
 
